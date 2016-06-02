@@ -1,0 +1,10 @@
+requests
+beautifulsoup4
+html5lib
+google-api-python-client
+flask
+virtualenv
+gunicorn
+pyyaml
+python-resize-image
+pyscreenshot
