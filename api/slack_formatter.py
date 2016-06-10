@@ -1,6 +1,6 @@
 def getSlackMessage(playerData, requestConfig):
 
-    message = "<https://playoverwatch.com/en-us/career/%s/%s|%s>\n" % (requestConfig.platform, requestConfig.playerName, requestConfig.playerName)
+    message = "<https://playoverwatch.com/en-us/career/%s/%s|%s> *%s stats*\n" % (requestConfig.platform, requestConfig.playerName, requestConfig.playerName, requestConfig.characterInquiry)
 
     for statGroup in playerData.groups:
         message = "%s%s\n" % (message, statGroup.header)
