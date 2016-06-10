@@ -28,7 +28,7 @@ def parseRequestConfig(requestConfigStr):
 
 
 def getPlayerData(requestConfig):
-    print "Querying player: %s" % requestConfig.playerName
+    print "Querying: %s" % requestConfig
 
     #initialize the web scraping parser
     html = urllib2.urlopen("https://playoverwatch.com/en-us/career/%s/%s" % (requestConfig.platform, requestConfig.playerName)).read() #TODO: psn support only, extend this!

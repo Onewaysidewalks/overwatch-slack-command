@@ -1,2 +1,2 @@
-def getSlackMessage(playerData, requestConfiguration):
-    return { "text": "OHAI " + playerName + ": " + str(playerData), "response_type": "in_channel" }
+def getSlackMessage(playerData, requestConfig):
+    return { "text": "OHAI " + requestConfig.playerName + ": " + str(playerData), "response_type": "in_channel" }
